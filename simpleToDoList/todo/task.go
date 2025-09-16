@@ -1,4 +1,4 @@
-package structs
+package todo
 
 import (
 	"fmt"
@@ -27,7 +27,7 @@ func CreateTask(text string) Task {
 
 func (task *Task) CompleteTask() {
 	if task.done {
-		fmt.Println("Задача уже завершена")
+		fmt.Println(taskAlreadyDone)
 		return
 	}
 	task.done = true
